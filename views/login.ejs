@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    boxShadow: {
+                        neu: '-7px -7px 10px white, 5px 5px 10px rgba(0.585, 0, 0, 0.585)',
+                        innerNeu: 'inset -5px -5px 10px white, inset 5px 5px 10px rgba(0, 0, 0, 0.485)',
+                    },
+                },
+            },
+        }
+    </script>
+    <title>Document</title>
+</head>
+<!--<body>
+   <div class="bg-zinc-900 w-full h-screen  pt-10 pl-10">
+    <h1 class="text-white font bold text-2xl mb-3">Login account</h1>
+    <form action="/login" method="post">
+        <input  class="px-3  mb-2 py-2 rounded outline-none" type="email" placeholder="email" name="email">
+        <input  class="px-3  mb-2 py-2 rounded outline-none" type="password" placeholder="password" name="password">
+        <button class="px-2 py-2 bg-blue-700 rounded-lg text-white">Login</button>
+    </form>
+
+   </div>
+</body>-->
+<body class="flex items-center justify-center h-screen bg-gray-200 p-6">
+    <div class="container w-96 p-6 md:p-12 bg-gray-200 rounded-lg shadow-neu">
+        <h1 class="text-2xl md:text-5xl mb-4 md:mb-6 text-center font-bold ">Sign In</h1>
+        <div class="icons flex justify-center items-center gap-4 mt-3">
+            <div class="icon cursor-pointer w-12 h-12 flex items-center justify-center p-2 rounded-full shadow-neu  text-xl"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="icon cursor-pointer w-12 h-12 flex items-center justify-center p-2 rounded-full shadow-neu  text-xl"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="icon cursor-pointer w-12 h-12 flex items-center justify-center p-2 rounded-full shadow-neu text-xl"><i class="fa-brands fa-instagram"></i></div>
+            <div class="icon cursor-pointer w-12 h-12 flex items-center justify-center p-2 rounded-full shadow-neu text-xl"><i class="fa-brands fa-google"></i></div>
+        </div>
+        <p class="mb-3 text-center mt-3 font-bold">or use your account</p>
+        <form action="/login" method="post">
+        <input type="text" placeholder="Email" name="email" class="w-full mb-4 p-4 outline-none  rounded-full bg-gray-200 shadow-innerNeu"/>
+        <input type="password" placeholder="Password" name="password" class="w-full outline-none mb-6 p-4 rounded-full bg-gray-200 shadow-innerNeu"/>
+        <div class="flex justify-center items-center mt-2">
+            <button class="w-44 h-12 rounded-full bg-blue-500 text-white hover:text-red-500 font-bold shadow-neu">Sign In</button>
+        </div>
+        <h1 class="text-sm text-center font-bold mt-5 text-gray-400"><span class="text-red-300">Note:-</span> Use Email & Password from which you make Account</h1>
+     </form>
+    </div>
+</body>
+</html>
