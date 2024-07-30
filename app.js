@@ -5,7 +5,7 @@ const usermodel=require("./models/user");
 const postmodel=require("./models/post");
 const cookieParser = require('cookie-parser');
 const path=require('path');
-const bcrypt=require('bcrypt');
+const bcrypt=require('bcryptjs');
 const jwt=require("jsonwebtoken");
 
 app.set("view engine","ejs");
